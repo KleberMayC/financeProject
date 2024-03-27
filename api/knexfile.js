@@ -1,9 +1,7 @@
-// import knexConfig from "./src/config/database";
-import knexConfig from "./src/config/database.js"
+// Update with your config settings.
 
-/**
- * @type { Object.<string, import("knex").Knex.Config> }
- */
+import knexConfig from "./src/config/database.js";
+
 export default {
   development: knexConfig,
 };

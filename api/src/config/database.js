@@ -5,8 +5,8 @@ const knexConfig = {
   connection: {
     host: process.env.DB_HOST || "127.0.0.1",
     port: 3306,
-    user: process.env.DB_USER || "kleber",
-    password: process.env.DB_PASSWORD || "oisenha123",
+    user: process.env.DB_USER || "root",
+    password: process.env.DB_PASSWORD || "1234",
     database: process.env.DB_NAME || "db",
   },
 };

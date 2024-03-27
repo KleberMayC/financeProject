@@ -3,10 +3,11 @@
  * @returns { Promise<void> }
  */
 export const up = function (knex) {
-  return knex.schema.createTable("categorias", (table) => {
+  return knex.schema.createTable("users", (table) => {
     table.bigIncrements("id");
     table.string("name");
-    table.bigint('user_id').unsigned().references("id").inTable("users");
+    table.string("email");
+    table.string("password");
     table.timestamps(true, true);
   });
 };
